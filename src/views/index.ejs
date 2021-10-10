@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>TAW</title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="css/tooplate-gymso-style.css">
+  <!--
+Tooplate 2119 Gymso Fitness
+https://www.tooplate.com/view/2119-gymso-fitness
+-->
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+  <!-- MENU BAR -->
+  <%- include('partial/menubar') %>
+
+
+
+  <!-- HERO -->
+  <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+
+    <div class="bg-overlay"></div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-8 col-md-10 mx-auto col-12">
+          <div class="hero-text mt-5 text-center">
+
+            <h6 data-aos="fade-up" data-aos-delay="300">una nueva forma de comprar</h6>
+
+            <h1 class="text-white" data-aos="fade-up" data-aos-delay="500">Con Taw es más fácil </h1>
+
+            <a href="#about" class="btn custom-btn bordered mt-3" data-aos="fade-up" data-aos-delay="700">Conócenos</a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="mt-lg-5 mb-lg-0 mb-4 col-lg-5 col-md-10 mx-auto col-12">
+          <h2 class="mb-4" data-aos="fade-up" data-aos-delay="300">Hola, </h2>
+
+          <p data-aos="fade-up" data-aos-delay="400"> En Taw queremos brindarte la mejor experiencia.
+
+
+            Con nuestra app puedes manejar tus compras, envíos y transferencias, con la mejor tecnología al alcance de tu mano.</p>
+
+        </div>
+
+        <div class="ml-lg-auto col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="700">
+          <div class="team-thumb">
+            <img src="images/team/team-image.jpg" class="img-fluid" alt="Trainer">
+
+            <div class="team-info d-flex flex-column">
+
+              <h3>Mary Yan</h3>
+              <span>Yoga Instructor</span>
+
+              <ul class="social-icon mt-3">
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mr-lg-auto mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12" data-aos="fade-up" data-aos-delay="800">
+          <div class="team-thumb">
+            <img src="images/team/team-image01.jpg" class="img-fluid" alt="Trainer">
+
+            <div class="team-info d-flex flex-column">
+
+              <h3>Catherina</h3>
+              <span>Body trainer</span>
+
+              <ul class="social-icon mt-3">
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <%- include('partial/contact') %>
+
+
+
+  <!-- FOOTER -->
+  <%- include('partial/footer') %>
+  <!-- Modal -->
+  <div class="modal fade" id="membershipForm" tabindex="-1" role="dialog" aria-labelledby="membershipFormLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h2 class="modal-title" id="membershipFormLabel">Membership Form</h2>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <form class="membership-form webform" role="form">
+            <input type="text" class="form-control" name="cf-name" placeholder="John Doe">
+
+            <input type="email" class="form-control" name="cf-email" placeholder="Johndoe@gmail.com">
+
+            <input type="tel" class="form-control" name="cf-phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+            <textarea class="form-control" rows="3" name="cf-message" placeholder="Additional Message"></textarea>
+
+            <button type="submit" class="form-control" id="submit-button" name="submit">Submit Button</button>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="signup-agree">
+              <label class="custom-control-label text-small text-muted" for="signup-agree">I agree to the <a href="#">Terms &amp;Conditions</a>
+              </label>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-footer"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/custom.js"></script>
+
+</body>
+
+</html>
