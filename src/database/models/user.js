@@ -15,10 +15,10 @@ module.exports = (sequelize, datatypes) => {
         last_name: {
             type: datatypes.STRING,
         },
-        direction: {
+        directions: {
             type: datatypes.STRING,
         },
-        birth_date: {
+        birt_date: {
             type: datatypes.DATE,
         },
     }

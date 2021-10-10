@@ -1,23 +1,27 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "D_aleLike",
+    "database": "Taw",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3307
+
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
+    "password": "D_aleLike",
+    "database": "Taw",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3307
   },
   "production": {
     "username": "root",
-    "password": null,
-    "database": "database_production",
+    "password": "D_aleLike",
+    "database": "Taw",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "port": 3307
   }
 }
