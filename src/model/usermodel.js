@@ -1,3 +1,4 @@
+const { throws } = require('assert/strict')
 const db = require('../database/models')
 
 module.exports = {
@@ -7,7 +8,9 @@ module.exports = {
         return users
     },
     createUser: async (user) => {
-        return 'Creando los users'
+        const result = await db.User.create(user)
+        if(!result) throw 'No se pudo insertar'
+        return true
     },
     updateUser: async (user) => {
         return 'Actualizar los users'

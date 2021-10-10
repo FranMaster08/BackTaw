@@ -1,17 +1,8 @@
 const express = require('express');
-const { userController } = require('../controller')
 const router = express.Router();
+const {userController} = require('../controller')
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-router.get('/sign', function (req, res, next) {
-  res.render('login', { title: 'Express' });
-});
-
-
-router.get('/users',userController.getUsers);
+router.use('/',require('./home'))
+router.use('/users',require('./users'))
 
 module.exports = router;

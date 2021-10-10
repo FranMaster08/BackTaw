@@ -5,7 +5,7 @@ const userController = {
     getUsers: async (req, res, next) => {
         try {
             const result = await userModel.getUsers()
-            res.status(200).json(result)
+            res.render('users/users', { usuarios: result })
         } catch (error) {
             next(error);
         }
@@ -13,16 +13,20 @@ const userController = {
     },
     createUser: async (req, res, next) => {
         try {
-            const result = await userModel.createUser(req.body)
+            const {
+                name, last_name, directions, birt_date
+            } = req.body
+            const result = await userModel.createUser({
+                name, last_name, directions, birt_date
+            })
             res.status(200).json(result)
         } catch (error) {
             next(error);
         }
-
     },
     updateUser: async (req, res, next) => {
         try {
-            const result = await userModel.updateUser(req.body,id)
+            const result = await userModel.updateUser(req.body, id)
             res.status(200).json(result)
         } catch (error) {
             next(error);
@@ -46,7 +50,6 @@ const userController = {
         }
 
     }
-
 
 
 }
