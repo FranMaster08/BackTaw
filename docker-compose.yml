@@ -1,5 +1,13 @@
 services:
-  miservicio_mysql:
+  web:
+    container_name: tawBack
+    restart: always
+    build: .
+    ports:
+         - "5000:3000"
+    links:
+      - mysql
+  mysql:
     image: mysql:5.7
     environment:
       MYSQL_DATABASE: 'test_database'

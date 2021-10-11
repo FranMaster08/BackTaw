@@ -1,4 +1,4 @@
-const { throws } = require('assert/strict')
+
 const db = require('../database/models')
 
 module.exports = {
