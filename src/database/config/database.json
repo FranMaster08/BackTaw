@@ -1,10 +1,11 @@
-module.exports = {
+{
   "development": {
     "username": "root",
     "password": "D_aleLike",
     "database": "Taw",
     "host": "mysql",
-    "dialect": "mysql",
+    "dialect": "mysql"
+
 
 
   },
@@ -13,7 +14,7 @@ module.exports = {
     "password": "D_aleLike",
     "database": "Taw",
     "host": "mysql",
-    "dialect": "mysql",
+    "dialect": "mysql"
 
   },
   "production": {
@@ -21,7 +22,7 @@ module.exports = {
     "password": "D_aleLike",
     "database": "Taw",
     "host": "mysql",
-    "dialect": "mysql",
+    "dialect": "mysql"
  
   }
 }
