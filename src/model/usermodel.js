@@ -4,11 +4,11 @@ const db = require('../database/models')
 module.exports = {
 
     getUsers: async () => {
-        const users =await db.User.findAll()
+        const users =await db.users.findAll()
         return users
     },
     createUser: async (user) => {
-        const result = await db.User.create(user)
+        const result = await db.users.create(user)
         if(!result) throw 'No se pudo insertar'
         return true
     },
