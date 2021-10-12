@@ -10,7 +10,7 @@ services:
   mysql:
     image: mysql:5.7
     environment:
-      MYSQL_DATABASE: 'test_database'
+      MYSQL_DATABASE: 'taw'
       MYSQL_USER: 'suscribete'
       MYSQL_PASSWORD: 'Recuerda_Suscribirte'
       MYSQL_ROOT_PASSWORD: 'D_aleLike'
