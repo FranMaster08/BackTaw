@@ -1,6 +1,8 @@
-const { userModel } = require('../model')
+const { userModel: userModel} = require('../model')
 
 const userController = {
+
+    
 
     getUsers: async (req, res, next) => {
         try {
@@ -14,10 +16,10 @@ const userController = {
     createUser: async (req, res, next) => {
         try {
             const {
-                name, last_name, directions, birt_date
+                name, last_name, address, birthday, password, email 
             } = req.body
             const result = await userModel.createUser({
-                name, last_name, directions, birt_date
+                name, last_name, address, birthday, password, email ,location: req.currentLocation
             })
             res.status(200).json(result)
         } catch (error) {

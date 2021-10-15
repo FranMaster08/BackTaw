@@ -1,25 +1,25 @@
-
-const db = require('../database/models')
+const {userRepository} = require('../database/model')
 
 module.exports = {
 
     getUsers: async () => {
-        const users =await db.users.findAll()
+        const users = await userRepository.find().exec()
         return users
     },
     createUser: async (user) => {
-        const result = await db.users.create(user)
-        if(!result) throw 'No se pudo insertar'
-        return true
+        const dataBaseUser = new userRepository(user)
+        await dataBaseUser.save()
+        return dataBaseUser
+        
     },
     updateUser: async (user) => {
-        return 'Actualizar los users'
+        return null
     },
     deleteUser: async (user) => {
-        return 'borrar el user'
+        return null
     },
     findUser: async (user) => {
-        return 'Buscar los users'
+        return null
     }
 
 }

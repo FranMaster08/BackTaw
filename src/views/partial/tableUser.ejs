@@ -1,7 +1,20 @@
-<tr>
-    <th scope="row"><%= user.id %></th>
+  <tr>
+    <td>
+      <span class="custom-checkbox">
+        <input type="checkbox" id="checkbox1" name="options[]" value="1">
+        <label for="checkbox1"></label>
+      </span>
+    </td>
     <td><%= user.name %></td>
     <td><%= user.last_name %></td>
-    <td><%= user.directions %></td>
-    <td><%= user.birt_date %></td>
+    <td><%= user.email %></td>
+    <td><%= user.address %></td>
+    <td><%= user.telephone %></td>
+    <td><%= user.birthday %></td>
+    <td><%= user.location.city %></td>
+    <td><%= user.location.regionName %></td>
+    <td>
+      <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+      <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+    </td>
   </tr>
